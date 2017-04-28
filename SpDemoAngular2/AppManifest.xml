@@ -7,7 +7,7 @@
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
-    <Title>SpDemoAngular2</Title>
+    <Title>SPManageEmployees</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 
