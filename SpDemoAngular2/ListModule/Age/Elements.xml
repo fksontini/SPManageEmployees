@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{394eec08-754a-455f-927b-27557ba7cadd}"
+       Name="Age"
+       DisplayName="Age"
+       Type="Number"
+       Required="FALSE"
+       Group="fksontini">
+  </Field>
+</Elements>

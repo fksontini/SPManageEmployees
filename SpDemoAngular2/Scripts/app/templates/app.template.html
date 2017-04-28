@@ -1,0 +1,50 @@
+﻿<h1>Manage Employees</h1>
+
+<!--Formulario de alumno-->
+<div style="width: 185px">
+    <fieldset>
+        <legend>{{actionform}} Employees</legend>
+        <form #alumnoForm="ngForm">
+            <input type="text" [(ngModel)]="employee.name" ngControl="name" placeholder="name" required />
+            <br /><br />
+            <input type="text" [(ngModel)]="employee.surname" ngControl="surname" placeholder="surname" required />
+            <br /><br />
+            <input type="text" [(ngModel)]="employee.age" ngControl="age" placeholder="age" required />
+            <br /><br />
+            <input type="button" value="New" (click)="AddEmployees()" [disabled]="!employeeForm.form.valid" />
+        </form>
+    </fieldset>
+</div>
+
+<!--Listado de alumnos-->
+
+<div *ngIf="listEmployee.length > 0">
+    <br /><br /><h2>Lista de alumnos</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Apellidos
+                </td>
+                <td>
+                    Nombre
+                </td>
+                <td>
+                    Nota
+                </td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="#alumno of listaAlumnos">
+                <td>{{employee.name}}</td>
+                <td>{{employee.Surname}}</td>
+                <td>{{employee.age}}</td>
+                <td>
+                    <input type="button" value="edit" (click)="EditEmployees(employee)" />
+                    <input type="button" value="delete" (click)="DeleteEmployees(employee)" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
