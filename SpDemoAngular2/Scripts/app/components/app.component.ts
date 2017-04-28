@@ -34,7 +34,7 @@ export class AppComponent {
         );
     }
 
-    // Guardar Employees
+    // add Employees
     public AddEmployees() {
 
         if (this.actionform == "New") {

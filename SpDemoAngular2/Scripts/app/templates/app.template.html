@@ -4,12 +4,12 @@
 <div style="width: 185px">
     <fieldset>
         <legend>{{actionform}} Employees</legend>
-        <form #alumnoForm="ngForm">
-            <input type="text" [(ngModel)]="employee.name" ngControl="name" placeholder="name" required />
+        <form #employeeForm="ngForm">
+            <input type="text" [(ngModel)]="employee.Name" ngControl="Name" placeholder="name" required />
             <br /><br />
-            <input type="text" [(ngModel)]="employee.surname" ngControl="surname" placeholder="surname" required />
+            <input type="text" [(ngModel)]="employee.Surname" ngControl="Surname" placeholder="surname" required />
             <br /><br />
-            <input type="text" [(ngModel)]="employee.age" ngControl="age" placeholder="age" required />
+            <input type="text" [(ngModel)]="employee.Age" ngControl="Age" placeholder="age" required />
             <br /><br />
             <input type="button" value="New" (click)="AddEmployees()" [disabled]="!employeeForm.form.valid" />
         </form>
@@ -19,27 +19,27 @@
 <!--Listado de alumnos-->
 
 <div *ngIf="listEmployee.length > 0">
-    <br /><br /><h2>Lista de alumnos</h2>
+    <br /><br /><h2>List of Employees </h2>
     <table>
         <thead>
             <tr>
                 <td>
-                    Apellidos
+                    Name
                 </td>
                 <td>
-                    Nombre
+                    Surname
                 </td>
                 <td>
-                    Nota
+                    Age
                 </td>
                 <td></td>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="#alumno of listaAlumnos">
-                <td>{{employee.name}}</td>
+            <tr *ngFor="#employee of listEmployee">
+                <td>{{employee.Name}}</td>
                 <td>{{employee.Surname}}</td>
-                <td>{{employee.age}}</td>
+                <td>{{employee.Age}}</td>
                 <td>
                     <input type="button" value="edit" (click)="EditEmployees(employee)" />
                     <input type="button" value="delete" (click)="DeleteEmployees(employee)" />

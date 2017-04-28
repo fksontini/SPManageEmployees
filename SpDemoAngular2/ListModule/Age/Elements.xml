@@ -4,7 +4,7 @@
        ID="{394eec08-754a-455f-927b-27557ba7cadd}"
        Name="Age"
        DisplayName="Age"
-       Type="Number"
+       Type="Text"
        Required="FALSE"
        Group="fksontini">
   </Field>

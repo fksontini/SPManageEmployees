@@ -1,22 +1,22 @@
 ﻿export class Employees {
 
     public id: number;
-    public name: string;
+    public Name: string;
     public Surname: string;
-    public age: number;
+    public Age: number;
 
     constructor();
-    constructor(name: string, Surname: string, age: number, id?: number) {
+    constructor(Name: string, Surname: string, Age: number, id?: number) {
 
         this.id = id;
-        this.name = name;
+        this.Name = Name;
         this.Surname = Surname;
-        this.age = age;
+        this.Age = Age;
 
     }
 
     public static fromJson(json: any) {
-        return new Employees(json.name, json.surname, json.age, json.ID);
+        return new Employees(json.Name, json.Surname, json.Age, json.ID);
     }
 
     public static fromJsonList(json: any) {

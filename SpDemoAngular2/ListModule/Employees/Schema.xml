@@ -17,7 +17,7 @@
     <Fields>
       <Field ID="{a84457bc-054a-4cd2-8342-e4ccc3a22a02}" Name="Name" DisplayName="Name" Type="Text" Required="TRUE" Group="fksontini"></Field>
       <Field ID="{1c69df38-c7ae-453d-b48b-6de5a2e24a5a}" Name="Surname" DisplayName="Surname" Type="Text" Required="TRUE" Group="fksontini"></Field>
-      <Field ID="{394eec08-754a-455f-927b-27557ba7cadd}" Name="Age" DisplayName="Age" Type="Number" Required="TRUE" Group="fksontini"></Field>
+      <Field ID="{394eec08-754a-455f-927b-27557ba7cadd}" Name="Age" DisplayName="Age" Type="Text" Required="TRUE" Group="fksontini"></Field>
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
@@ -45,9 +45,9 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           <FieldRef Name="LinkTitle"></FieldRef>
-          <FieldRef Name="Nombre" />
-          <FieldRef Name="Apellidos" />
-          <FieldRef Name="Nota" />
+          <FieldRef Name="Name" />
+          <FieldRef Name="Surname" />
+          <FieldRef Name="Age" />
         </ViewFields>
         <Query>
           <OrderBy>

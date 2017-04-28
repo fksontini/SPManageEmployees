@@ -50,9 +50,9 @@ export class EmployeesService {
 
         var obj = {
             '__metadata': { 'type': "SP.Data." + this.spListName + "ListItem" },
-            'name': model.name,
+            'Name': model.Name,
             'Surname': model.Surname,
-            'age': model.age
+            'Age': model.Age
         };
 
         var data = JSON.stringify(obj);
@@ -64,9 +64,9 @@ export class EmployeesService {
 
         var obj = {
             '__metadata': { 'type': "SP.Data." + this.spListName + "ListItem" },
-            'name': model.name,
+            'Name': model.Name,
             'Surname': model.Surname,
-            'age': model.age
+            'Age': model.Age
         };
 
         var data = JSON.stringify(obj);
